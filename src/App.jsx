@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import EmployeeList from './components/EmployeeList'
 
 class App extends Component {
   render() {
@@ -7,7 +7,9 @@ class App extends Component {
       <>
         <section name="header"> 
           <h>Employee list</h>
-          <section name="main"></section>
+          <section name="main">
+            <EmployeeList />
+          </section>
         </section>
       </>
     );
