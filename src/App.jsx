@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import EmployeeList from './components/EmployeeList'
+import EmployeeList from './components/EmployeeList.jsx'
 
 class App extends Component {
   render() {

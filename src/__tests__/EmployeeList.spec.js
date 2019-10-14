@@ -1,19 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import EmployeeList from '../components/EmployeeList'
+import EmployeeList from '../components/EmployeeList';
 import axios from 'axios';
-
-
-describe('Display list of employees', () => {
-})
-
-it('when user visits the page', () => {
-  cy.visit('http://localhost:3000')
-  cy.get('section[name="main"]').within(() => {
-    cy.get('li')
-    .should('have.length', 5)
-  })
-})
+import { isTSAnyKeyword, exportAllDeclaration } from '@babel/types';
 
 describe('<EmployeeList />', () => {
   it('should fetch employees from back-end using Axios', () => {
