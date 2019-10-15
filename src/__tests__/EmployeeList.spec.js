@@ -2,15 +2,14 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import EmployeeList from '../components/EmployeeList';
 import axios from 'axios';
-import { isTSAnyKeyword, exportAllDeclaration } from '@babel/types';
+
+jest.mock('axios')
 
 describe('<EmployeeList />', () => {
   it('should fetch employees from back-end using Axios', () => {
-    const axiosSpy = jest.spyOn(axios, 'get');
-    shallow(
-      <EmployeeList />
-    )
-    expect(axiosSpy).toBeCalled();
+    const axiosSpy = jest.spyOn(axios, 'get')
+    shallow(<EmployeeList />)
+    expect(axiosSpy).toBeCalled()
   })
 
   it('should render a list of 5 employees', async () => {
