@@ -66,3 +66,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### User stories
+
+As a user of the application
+In order to be able to work with employee management
+I would like to access a list of employees.
+
+As a user of the application
+In order to be able to see details of the employee
+I would like to view the employee profile 
