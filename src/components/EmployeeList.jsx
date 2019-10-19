@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { List, Image, Button, Segment, Divider, ListContent } from 'semantic-ui-react';
+import { List, Image, Button } from 'semantic-ui-react';
 import axios from 'axios'
+// import displayEmployeeProfile from './components/DisplayEmployeeProfile';
 
 class EmployeeList extends Component {
   state = {
@@ -15,12 +16,18 @@ class EmployeeList extends Component {
     let employees = await axios.get('https://reqres.in/api/users?per_page=5')
     this.setState({ employees: employees.data.data }) 
   }
+
+  viewEmployee(id) {
+    this.setState({Employee: this.state.employee.filter(employee => employee.id !== id)});
+  }
+
   render() {
-    let employeeList
+    let { displayProfile } = ;
+    let employeeList;
     if (this.state.employees) {
     employeeList = this.state.employees.map(employee => {
       return (
-        <List selection verticalAlign='middle'>
+        <List>
           <List.Item key={employee.id}>
             <Image avatar src={employee.avatar} />
               <List.Content> 
@@ -29,13 +36,20 @@ class EmployeeList extends Component {
                     {`${employee.first_name} @email.com`}
                   </List.Description>
                 </List.Content>
-              <List.Content>
-                <Button content='More details' target='key={employee.id}' floated='right' centered></Button>
-            </List.Content>
+              <Card>
+
+                <Button onClick={() =>this.props.displayProfile.employee.id } 
+                  floated='right'>Details</Button>
+            </Card>
           </List.Item>
         </List>
       )
     })
+
+  }
+
+  render () {
+    let displayProfile = this.props 
 
   }
 

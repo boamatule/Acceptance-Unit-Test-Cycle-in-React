@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import EmployeeList from './components/EmployeeList';
-import { Container,Header, Grid, Segment, Button } from 'semantic-ui-react'
+// import displayEmployeeProfile from './components/DisplayEmployeeProfile';
+
+import { Container,Header, Grid, Segment } from 'semantic-ui-react'
 
 class App extends Component {
   render() {
     return (
       <>
         <Container >
-
           <Header textAlign="center"> 
           <section name="header">  
                 <h2>Employee list</h2>
@@ -19,6 +20,7 @@ class App extends Component {
               <Segment>
                 <section name="main">
                   <EmployeeList />
+                  <displayEmployeeProfile />
                 </section>
               </Segment>
             </Grid.Column>
