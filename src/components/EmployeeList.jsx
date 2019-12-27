@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List, Image, Grid, Container, Button, Divider } from 'semantic-ui-react';
+import { Header, List, Image, Grid, Container, Button, Divider, Popup } from 'semantic-ui-react';
 import axios from 'axios'
 
 class EmployeeList extends Component {
@@ -35,13 +35,36 @@ class EmployeeList extends Component {
                   </List.Content>
                 </List>
 
-                <Button     
+                {/* <Button    
                   attached='bottom'
                   content='View more details'
                   onClick={this.employeeList}
                   onKeyPress={this.handleKeyPress}
-                  />           
-              </Grid.Column>
+                  target="_blank"
+                  />         */}
+
+                  <Popup trigger={<Button>View more details</Button>} flowing hoverable>
+                    <Grid centered divided columns={1}>
+                      <Grid.Column textAlign='center'>
+
+                      <List key={employee.id}>
+                        <Image avatar src={employee.avatar} />
+                        <List.Content> 
+                          <List.Header as='p'> {`${employee.first_name} ${employee.last_name}`}</List.Header>
+                          <List.Description>
+                          {`${employee.first_name} @email.com`}
+                          </List.Description>
+                        </List.Content>
+                      </List>
+
+                        <Button color='green' >Edit</Button>
+                        <Button color='red' >Delete</Button>
+                      </Grid.Column>
+                    </Grid>
+                  </Popup>   
+
+
+            </Grid.Column>
           </Grid>
         </Container>
       
