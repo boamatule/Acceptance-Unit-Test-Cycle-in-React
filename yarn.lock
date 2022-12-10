@@ -3283,10 +3283,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.6.1.tgz#4420957923879f60b7a5146ccbf81841a149b653"
-  integrity sha512-6n0oqENdz/oQ7EJ6IgESNb2M7Bo/70qX9jSJsAziJTC3kICfEMmJUlrAnP9bn+ut24MlXQST5nRXhUP5nRIx6A==
+cypress@^3.8.1:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.8.3.tgz#e921f5482f1cbe5814891c878f26e704bbffd8f4"
+  integrity sha512-I9L/d+ilTPPA4vq3NC1OPKmw7jJIpMKNdyfR8t1EXYzYCjyqbc59migOm1YSse/VRbISLJ+QGb5k4Y3bz2lkYw==
   dependencies:
     "@cypress/listr-verbose-renderer" "0.4.1"
     "@cypress/xvfb" "1.2.4"
@@ -3299,6 +3299,7 @@ cypress@^3.6.1:
     commander "2.15.1"
     common-tags "1.8.0"
     debug "3.2.6"
+    eventemitter2 "4.1.2"
     execa "0.10.0"
     executable "4.1.1"
     extract-zip "1.6.7"
@@ -4133,6 +4134,11 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
+eventemitter2@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/eventemitter2/-/eventemitter2-4.1.2.tgz#0e1a8477af821a6ef3995b311bf74c23a5247f15"
+  integrity sha512-erx0niBaTi8B7ywjGAcg8ilGNRl/xs/o4MO2ZMpRlpZ62mYzjGTBlOpxxRIrPQqBs9mbXkEux6aR+Sc5vQ/wUw==
 
 eventemitter3@^4.0.0:
   version "4.0.0"
@@ -8665,9 +8671,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^4.1.0:
   version "4.3.4"
